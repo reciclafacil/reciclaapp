@@ -1,1 +1,50 @@
-#tituloPrincipal{ font-size: 150px; text-align: center; color: green;}
+#paginaInicialBloco02 i {color: white; text-align: center; font-size: 70px; margin-top: 100px;}
+
+
+/* RODAPÉ (J.Paulo)*/
+a {
+    color:black
+}
+.logo2{
+    width: 80%;
+}
+.footer_logo{
+    margin-top: 10px;
+}
+.container1{
+    margin-top: 20px;
+    background-color: rgb(35, 126, 35);
+}
+.container1 i{
+    color: rgb(0, 61, 0);
+}
+.container2{
+    background-color:rgb(0, 61, 0) ;
+}
+.texto2{
+    text-align: center;
+    color: white;
+}
+.telefone{
+    display: inline;
+}
+.email{
+    display: inline;
+}
+.texto{
+    display: inline;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    color: white;
+}
+.contato{
+    margin-top: 10px;
+}
+.siga{
+    color: white;
+}
+@media screen and (max-width:800px){
+    .logo2{
+        display: none;
+    }
+}

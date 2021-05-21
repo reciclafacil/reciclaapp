@@ -1,4 +1,11 @@
-#paginaInicialBloco02 i {color: white; text-align: center; font-size: 70px; margin-top: 100px;}
+/* CORPO (G.Vitor)*/
+.container{ margin: auto;}
+img{ max-width: 100%;}
+#imagemPrincipal{}
+#informacoes { color: white;}
+#informacoes i {font-size: 80px; margin-bottom: 10%;}
+#informacoes h1{font-size: 25px; margin-bottom: 5%;}
+#bloquinhosInf {margin-top: 10%; margin-bottom: 10%;}
 
 
 /* RODAPÉ (J.Paulo)*/
@@ -6,7 +13,7 @@ a {
     color:black
 }
 .logo2{
-    width: 80%;
+    width: 80px;
 }
 .footer_logo{
     margin-top: 10px;

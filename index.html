@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
     <header>
         <!-- Barra de navegação (Lio) -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,40 +60,97 @@
 
     </header>
     
-    <!-- Primeiro bloco página inicial-->
-    <section id="paginaInicialBloco01">
-        <div class="container">
-            <div class="row">
-                <!-- Imagem de fundo pagina inicial-->
-                <div>
-                    <img src="img/imagemPaginaInicial.png" alt="Imagem1-paginaInicial" style="max-width: 100%;">
+    <main class="col-12">
+        <!-- Imagem principal-->
+        <section id="imagemPrincipal">
+            <div class="container">
+                <div class="row">
+                    <img src="img/imagemPaginaInicial.png" alt="imagemReciclagem" >
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Segundo bloco página inicial-->
-    <section id="paginaInicialBloco02">
-        <div class="container">
-            <div class="row">
-                 <div class="col-sm-12" style="background-color: #0bad72; height: 450px; text-align: center;">
-                    
-                    <span class="col-4">
-                        <i class="fas fa-search col-3"></i>
-                    </span>
-                    <span class="col-4">
-                        <i class="fas fa-truck col-3" ></i>
-                    </span>
-                    <span class="col-4">
-                        <i class="fas fa-user-friends col-3"></i>
-                    </span>
-
-                </div>
-            </div>
-        </div>
+        </section>
         
-    </section>
+        <!-- Bloco de informações-->
+        <section id="informacoes">
+            <div class="container">
+                <div class="row" style="background-color: #0bad72;">
+                    
+                    <!-- Lupa -->
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
+                        <h1>
+                            <i class="fas fa-search"></i> <br> O que reciclar?
+                        </h1>
+                        <p>
+                            Informações para tornar a sua coleta seletiva 
+                            correta. Diversos materiais são colocados de forma 
+                            equivocada no lixo reciclável.
+                        </p>
+                    </div>
+                    <!-- Coleta -->
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
+                        <h1>
+                            <i class="fas fa-truck"></i><br> Dias de coleta
+                        </h1>
+                        <p>
+                            Consulte os dias e horários em que as coletas 
+                            seletiva e domiciliar passarão em sua casa.
+                        </p>
+                    </div>
+                    <!-- Associações -->
+                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
+                        <h1>
+                            <i class="fas fa-users"></i><br> Associações
+                        </h1>
+                        <p>
+                            A Política Nacional de Resíduos Sólidos incentiva a 
+                            criação e o desenvolvimento de cooperativas ou 
+                            outras formas de associação de catadores de 
+                            materiais reutilizáveis e recicláveis.
+                        </p>
+                    </div>
 
-    <!-- Rodapé -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Imagem e informação sobre o app-->
+        <section id="aplicativo">
+            <div class="container">
+                <div class="row">
+                    <!-- Imagem provisória celular-->
+                    <div class="col-lg-5 col-md-12 col-sm-12" style="width: 400px; margin: 7%;">
+                        <img src="img/celularReciclaapp.PNG" alt="Celular com o aplicativo">
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-12 col-sm-12" style="margin-top: 20%;">
+                        <h1>
+                            <strong>Reciclapp</strong> 
+                        </h1>
+                        <p style="margin-top: 15px;">
+                            Neste app é possível consultar dados sobre o programa de
+                            Extensão Coleta Seletiva Cap, as associações de catadores,
+                            a coleta seletiva e sobre os materiais recicláveis e não recicláveis.
+                            Também é possivel criar e ativar uma notificação para a coleta
+                            seletivaa no seu bairro. Atualmente, atende-se apenas a região de
+                            Ouro Branco.
+                        </p>
+                        <img src="img/logoGooglePlay.png" alt="Logo Google Play" style="width: 200px; margin-left: 90px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Avaliação do usuário-->
+        <section id="opniaoUsuario">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer >
         <!-- Rodapé (J.Paulo)-->
         <div class="container container1">
@@ -151,7 +208,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -3,9 +3,10 @@
 img{ max-width: 100%;}
 #imagemPrincipal{}
 #informacoes { color: white;}
-#informacoes i {font-size: 80px; margin-bottom: 10%;}
+#informacoes i {font-size: 55px; margin-bottom: 10%;}
 #informacoes h1{font-size: 25px; margin-bottom: 5%;}
 #bloquinhosInf {margin-top: 10%; margin-bottom: 10%;}
+#bloquinhosInf i { background-color: #0a8f5e; border-radius: 50%;}
 
 
 /* RODAPÉ (J.Paulo)*/

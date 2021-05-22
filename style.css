@@ -1,11 +1,10 @@
 /* CORPO (G.Vitor)*/
 .container{ margin: auto;}
 img{ max-width: 100%;}
-#imagemPrincipal{}
 #informacoes { color: white;}
 #informacoes i {font-size: 55px; margin-bottom: 10%;}
 #informacoes h1{font-size: 25px; margin-bottom: 5%;}
-#bloquinhosInf {margin-top: 10%; margin-bottom: 10%;}
+#bloquinhosInf {margin-top: 7%; margin-bottom: 7%;}
 #bloquinhosInf i { background-color: #0a8f5e; border-radius: 50%;}
 
 

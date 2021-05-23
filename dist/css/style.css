@@ -1,0 +1,112 @@
+/**** MENU ****/
+.nav-item-button {
+    margin-left: 20px;
+}
+
+/**** GERAL ****/
+a {
+    color: black;
+}
+a:hover .fa-facebook {
+    color: var(--rc-color-facebook);
+}
+a:hover .fa-instagram {
+    color: var(--rc-color-instagram);
+}
+a:hover .fa-youtube {
+    color: var(--rc-color-youtube);
+}
+a:hover .fa-linkedin {
+    color: var(--rc-color-linkedin);
+}
+
+.logo-texto {
+    font-weight: bold;
+    letter-spacing: -0.07rem;
+    text-transform: uppercase;
+}
+
+/**** CORPO *****/
+img{ max-width: 100%;}
+
+#banner {
+    background-image: url('../../img/banner.png');
+    height: 647px;
+}
+
+#informacoes {
+    background-color: var(--rc-green-light);
+    color: white;
+    text-align: center;
+    padding-top: var(--rc-section-padding);
+    padding-bottom: var(--rc-section-padding);
+}
+#informacoes i {
+    background-color: var(--rc-green-light-dark);
+    border-radius: 50%;
+    font-size: 55px;
+    margin-bottom: 2rem;
+    padding: 35px;
+}
+#informacoes p {
+    margin: 0;
+}
+
+#aplicativo {
+    padding-top: var(--rc-section-padding);
+    padding-bottom: var(--rc-section-padding);
+}
+#aplicativo-texto > div {
+    margin-top: 50%;
+    transform: translateY(-25%);
+}
+#aplicativo-texto h2 {
+    margin-bottom: 1rem;
+}
+#aplicativo-texto p {
+    color: var(--gray-dark-light);
+}
+#aplicativo .btn-google-play {
+    margin-top: 15px;
+}
+
+#opiniao-usuarios {
+    background-color: var(--rc-gray-light);
+    padding-top: var(--rc-section-padding);
+    padding-bottom: var(--rc-section-padding);
+}
+
+/**** RODAPE ****/
+#footer-info {
+    background-color: var(--rc-green-dark-light);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footer-info i {
+    background-color: var(--rc-green-dark);
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 14px;
+}
+#footer-info a {
+    color: white;
+}
+#footer-info .empresa-info i {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+#footer-info .empresa-info p:last-child {
+    margin-bottom: 0;
+}
+
+#footer-copyright {
+    background-color: var(--rc-green-dark);
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px; 
+    text-align: center;
+}
+#footer-copyright p {
+    margin-bottom: 0;
+}

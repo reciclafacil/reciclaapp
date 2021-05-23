@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ReciclaFácil">
+    <meta name="author" content="Reciclapp">
     <title>ReciclaApp</title>
-    <!-- Style Bootstrap-->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- FontAwesome-->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <!-- Style-->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="dist/css/variables.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
 
     <header>
         <!-- Barra de navegação (Lio) -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                 <!-- Imágem em miniatura na navbar -->
-                <img src="img/logoRecicla.png" width="80" height="80" alt="Logo do projeto">
+                <img src="img/reciclapp-logo.png" width="80" height="80" alt="Logo Reciclapp">
               </a>
               <!-- Botão que aparecerar quando a navbar diminuir, pelo tamanho da tela. Ele será responsável por mostrar os menus em ocuto -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +33,6 @@
                 <ul class="navbar-nav mr-auto"> 
                 </ul>
                 <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="sobre.html">Sobre</a>
                   </li>
@@ -50,22 +48,20 @@
                   <li class="nav-item">
                     <a class="nav-link" href="fale_conosco.html">Fale Conosco</a>
                   </li>
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-success" href="" >Download</button>
+                  <li class="nav-item nav-item-button">
+                    <button type="button" class="btn btn-success" href="https://play.google.com/store/apps/details?id=com.ufsj.capcoletaseletivaapp&hl=es_NI" target="_blank">Download</button>
                   </li>
                 </ul>
               </div>  
             </div>
         </nav>
-
     </header>
     
-    <main class="col-12">
+    <main>
         <!-- Imagem principal-->
-        <section id="imagemPrincipal">
+        <section id="banner">
             <div class="container">
                 <div class="row">
-                    <img src="img/imagemPaginaInicial.png" alt="imagemReciclagem" >
                 </div>
             </div>
         </section>
@@ -73,44 +69,25 @@
         <!-- Bloco de informações-->
         <section id="informacoes">
             <div class="container">
-                <div class="row" style="background-color: #0bad72;">
-                    
+                <div class="row">
                     <!-- Lupa -->
-                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
-                        <h1>
-                            <i class="fas fa-search" style="padding: 35px;"></i> <br> O que reciclar?
-                        </h1>
-                        <p>
-                            Informações para tornar a sua coleta seletiva 
-                            correta. Diversos materiais são colocados de forma 
-                            equivocada no lixo reciclável.
-                        </p>
+                    <div class="col-12 col-lg-4">
+                        <i class="fas fa-search"></i>
+                        <h2>O que reciclar?</h2>
+                        <p>Informações para tornar a sua coleta seletiva correta. Diversos materiais são colocados de forma  equivocada no lixo reciclável.</p>
                     </div>
                     <!-- Coleta -->
-                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
-                        <h1>
-                            <i class="fas fa-truck" style="padding-top: 35px; padding-left: 28px; padding-bottom: 35px; padding-right: 28px;">
-                            </i><br> Dias de coleta
-                        </h1>
-                        <p>
-                            Consulte os dias e horários em que as coletas 
-                            seletiva e domiciliar passarão em sua casa.
-                        </p>
+                    <div class="col-12 col-lg-4">
+                        <i class="fas fa-truck"></i>
+                        <h2> Dias de coleta</h2>
+                        <p>Consulte os dias e horários em que as coletas seletiva e domiciliar passarão em sua casa.</p>
                     </div>
                     <!-- Associações -->
-                    <div class="col-lg-4 col-md-12 col-sm-12" style="text-align: center;" id="bloquinhosInf">
-                        <h1>
-                            <i class="fas fa-users" style="padding-top: 35px; padding-left: 28px; padding-bottom: 35px; padding-right: 28px;">
-                            </i><br> Associações
-                        </h1>
-                        <p>
-                            A Política Nacional de Resíduos Sólidos incentiva a 
-                            criação e o desenvolvimento de cooperativas ou 
-                            outras formas de associação de catadores de 
-                            materiais reutilizáveis e recicláveis.
-                        </p>
+                    <div class="col-12 col-lg-4">
+                        <i class="fas fa-users"></i>
+                        <h2>Associações</h2>
+                        <p>A Política Nacional de Resíduos Sólidos incentiva a criação e o desenvolvimento de cooperativas ou outras formas de associação de catadores de materiais reutilizáveis e recicláveis.</p>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -120,110 +97,77 @@
             <div class="container">
                 <div class="row">
                     <!-- Imagem provisória celular-->
-                    <div class="col-lg-5 col-md-12 col-sm-12" style="width: 400px; margin: 7%;">
-                        <img src="img/celularReciclaapp.PNG" alt="Celular com o aplicativo">
+                    <div class="col-12 col-lg-5 offset-lg-1 ">
+                        <img src="img/device-recicla-app.png" alt="Screenshots do aplicativo">
                     </div>
-                    
-                    <div class="col-lg-5 col-md-12 col-sm-12" style="margin-top: 20%;">
-                        <h1>
-                            <strong>Reciclapp</strong> 
-                        </h1>
-                        <p style="margin-top: 15px; color: rgb(75, 75, 75);">
-                            Neste app é possível consultar dados sobre o programa de
-                            Extensão Coleta Seletiva Cap, as associações de catadores,
-                            a coleta seletiva e sobre os materiais recicláveis e não recicláveis.
-                            Também é possivel criar e ativar uma notificação para a coleta
-                            seletivaa no seu bairro. Atualmente, atende-se apenas a região de
-                            Ouro Branco.
-                        </p>
-                        <img src="img/logoGooglePlay.png" alt="Logo Google Play" style="width: 200px; margin-left: 90px;">
+                    <div id="aplicativo-texto" class="col-12 col-lg-5">
+                        <div>
+                            <h2 class="logo-texto">Reciclapp</h2>
+                            <p>Neste app é possível consultar dados sobre o programa de Extensão Coleta Seletiva Cap, as associações de catadores, a coleta seletiva e sobre os materiais recicláveis e não recicláveis. Também é possivel criar e ativar uma notificação para a coleta seletivaa no seu bairro. Atualmente, atende-se apenas a região de Ouro Branco.</p>
+                            <a class="btn-google-play" href="https://play.google.com/store/apps/details?id=com.ufsj.capcoletaseletivaapp&hl=es_NI" target="_blank"><img src="img/btn-google-play.svg" alt="Logo Google Play"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Avaliação do usuário-->
-        <section id="opniaoUsuario">
+        <section id="opiniao-usuarios">
             <div class="container">
                 <div class="row">
                     <!-- carousel com avaliação usuario-->
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="opiniao-usuarios-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active" style="padding: 200px; padding-right: 940px; background-color: rgb(178, 214, 192);">
-                            <div >
-                                
+                          <div class="carousel-item active">
+                            <div>
                             </div>
                           </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#opiniao-usuarios-carousel" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="sr-only">Anterior</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#opiniao-usuarios-carousel" role="button" data-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Próximo</span>
                         </a>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer >
+    <footer>
         <!-- Rodapé (J.Paulo)-->
-        <div class="container container1">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col-0 col-sm-0 col-md-0 col-lg-2 footer_logo">
-                                <img src="img/logoRecicla.png" class="logo2">
-                            </div>
-                            <div class="col-8 col-sm-8 col-md-8 col-lg-7">
-                               <div class="contato">
-                                    <h1 class="telefone"><i class="fas fa-phone-square-alt"></i></h1>  
-                                    <p class="texto">(31) 2222-5555</p>
-                               </div>
-                                <div class="contato"> 
-                                    <h1 class="telefone"><i class="fas fa-envelope-square"></i></h1>  
-                                    <p class="texto">contato@reciclapp.com.br</p> 
-                                </div>
-                                   
-                                   
-                               
-                            </div>
-                            <div class="col-4 col-sm-4 col-md-4 col-lg-3">
-
-                                <H1 class="siga">Siga-nos:</H1>
-                                <h1>
-                                    <a href="https://www.facebook.com/reciclarnoplanaltobeirao/" target="_blank"><i class="fab fa-facebook-square"></i></a> 
-                                    <a href="https://instagram.com/capcoletaseletiva?igshid=w90lzmi10fzo" target="_blank"><i class="fab fa-instagram-square"></i></a> 
-                                    <a href="" target="_blank"><i class="fab fa-youtube-square"></i></a> 
-                                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a> </h1>
-                            </div>
-
+        <div id="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-0 col-lg-2">
+                        <h3 class="logo-texto">Reciclapp</h3>
+                    </div>
+                    <div class="col-8 col-lg-7 empresa-info">
+                       <p><i class="fas fa-phone-alt"></i>  (31) 2222-5555</p>
+                       <p><i class="fas fa-envelope"></i> contato@reciclapp.com.br</p>
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <h3>Siga-nos:</h3>
+                        <div>
+                            <a href="https://www.facebook.com/reciclarnoplanaltobeirao/" target="_blank"><i class="fab fa-facebook"></i></a> 
+                            <a href="https://instagram.com/capcoletaseletiva?igshid=w90lzmi10fzo" target="_blank"><i class="fab fa-instagram"></i></a> 
+                            <a href="" target="_blank"><i class="fab fa-youtube"></i></a> 
+                            <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-        <div class="container container2">
-            <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="container">
-                    <div class="row">
-
-                        <p class="texto2">Copyright 2021 Reciclapp - Todos os direitos reservados</p>
+        <div id="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Copyright 2021 Reciclapp - Todos os direitos reservados</p>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </footer>

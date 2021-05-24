@@ -27,8 +27,6 @@ a:hover .fa-linkedin {
 }
 
 /**** CORPO *****/
-img{ max-width: 100%;}
-
 #banner {
     background-image: url('../../img/banner.png');
     height: 647px;
@@ -74,6 +72,58 @@ img{ max-width: 100%;}
     background-color: var(--rc-gray-light);
     padding-top: var(--rc-section-padding);
     padding-bottom: var(--rc-section-padding);
+}
+#opiniao-usuarios .carousel-control-prev,
+#opiniao-usuarios .carousel-control-next {
+    width: auto;
+}
+#opiniao-usuarios .carousel-control-prev {
+    padding-left: 10px;
+}
+#opiniao-usuarios .carousel-control-next {
+    padding-right: 10px;
+}
+#opiniao-usuarios .carousel-control-next i,
+#opiniao-usuarios .carousel-control-prev i {
+    color: var(--rc-green-dark-light);
+}
+#opiniao-usuarios .usuario-imagem {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    height: 90px;
+    position: relative;
+    width: 90px;
+}
+#opiniao-usuarios .usuario-texto {
+    color: var(--rc-turquoise);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-left: 30px;
+    min-height: 230px;
+    padding-top: 15px;
+    padding-left: 40px;
+    position: relative;
+    width: 80%;
+}
+#opiniao-usuarios .usuario-quote {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+}
+#opiniao-usuarios .usuario-quote i {
+    font-size: 30px;
+    opacity: 50%;
+}
+#opiniao-usuarios .usuario-nome {
+    font-size: 1.2rem;
+    margin-bottom: 0;
 }
 
 /**** RODAPE ****/

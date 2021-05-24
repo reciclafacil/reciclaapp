@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --rc-turquoise: #359f92;
+  --rc-green-light: #0bad72;
+  --rc-green-light-dark: #0a8f5e;
+  --rc-green-dark-light: #036D47;
+  --rc-green-dark: #014C31; 
+  --rc-gray-light: #e5e9f2;
+  --rc-gray-dark-light: #757575;
+  
+  --rc-color-facebook: #3b5998;
+  --rc-color-instagram: #3f729b;
+  --rc-color-youtube: #cd201f;
+  --rc-color-linkedin: #0077b5;
+
+  /* Sizes */
+  --rc-section-padding: 90px;
+}

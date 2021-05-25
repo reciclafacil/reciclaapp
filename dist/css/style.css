@@ -211,10 +211,30 @@ a:hover .fa-linkedin {
 
 @media screen and (max-width: 540px) 
 {
+    .menu{
+        text-align: center;
+    }
+
+    .menu div ul li{
+        margin-left: 0px;
+    }
+
 
     #informacoes {
 
             
+    }
+
+    .texto_banner{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+    }
+
+
+    .app_img img{
+        max-width: 100%;
     }
 
     #aplicativo-texto{

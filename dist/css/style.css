@@ -20,10 +20,27 @@ a:hover .fa-linkedin {
     color: var(--rc-color-linkedin);
 }
 
+.btn-default {
+    background-color: white;
+    border-color: var(--rc-turquoise);
+    color: var(--rc-turquoise);
+    font-weight: 600;
+    padding: 11px 32px;
+}
+.btn-default:hover {
+    background-color: var(--rc-turquoise);
+    border-color: var(--rc-turquoise);
+    color: white;
+}
+
 .logo-texto {
     font-weight: bold;
     letter-spacing: -0.07rem;
     text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
 }
 
 /**** CORPO *****/
@@ -31,36 +48,28 @@ a:hover .fa-linkedin {
     background-image: url('../../img/banner.png');
     height: 647px;
 }
-.texto_banner{
-    margin-left: 40px;
+.banner-texto {
     margin-top: 60px;
+    padding-left: 40px;
 }
-.texto_banner h1 {
+.banner-texto h1 {
     color: var(--rc-turquoise);
-    font-size: 75px;
-    margin-bottom: 10px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: -0.15rem;
+    line-height: 3.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
-.texto_banner h2 {
-    margin: 0px;
-    color: var(--rc-turquoise);
-    font-size: 50px;
-    margin-bottom: -20px;
+.banner-texto h1 > span {
+    font-size: 3rem;
+    font-weight: 400;
 }
-.texto_banner h3 {
-    font-size: 28px;
-    margin-bottom: 50px;
+.banner-texto p {
     color: #47525e;
-    
-}
-.saiba_mais {
-    color: var(--rc-turquoise);
-    background-color: white;
-    border-color: var(--rc-turquoise);
-}
-.saiba_mais:hover {
-    color: white;
-    background-color: var(--rc-turquoise);
-    border-color: var(--rc-turquoise);
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.2;
 }
 
 #informacoes {
@@ -86,24 +95,21 @@ a:hover .fa-linkedin {
     padding-top: var(--rc-section-padding);
     padding-bottom: var(--rc-section-padding);
 }
-
-.app_img{
-    max-width: 100%;
+#aplicativo .btn-google-play {
+    margin-top: 15px;
+}
+.aplicativo-imagem {
     padding: 0px;
 }
-
-#aplicativo-texto > div {
+.aplicativo-texto > div {
     margin-top: 50%;
     transform: translateY(-25%);
 }
-#aplicativo-texto h2 {
+.aplicativo-texto h2 {
     margin-bottom: 1rem;
 }
-#aplicativo-texto p {
+.aplicativo-texto p {
     color: var(--gray-dark-light);
-}
-#aplicativo .btn-google-play {
-    margin-top: 15px;
 }
 
 #opiniao-usuarios {
@@ -172,6 +178,34 @@ a:hover .fa-linkedin {
     margin-bottom: var(--rc-title-bottom);
 }
 
+#projetos-informacoes {
+    margin-top: 50px;
+}
+#projetos-informacoes h2 {
+    color: var(--rc-turquoise);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 4.2rem;
+}
+#projetos-informacoes .container-fluid > .row {
+    padding-top: var(--rc-section-padding);
+    padding-bottom: var(--rc-section-padding);
+}
+#projetos-informacoes .container-fluid > .row:nth-child(odd) {
+    background-color: var(--rc-gray-light);
+}
+
+#parceiros-logos {
+    margin: 50px 0;
+}
+#parceiros-logos .row > div {
+    margin-bottom: 50px;
+    text-align: center;
+}
+#parceiros-logos a:hover img {
+    filter: brightness(75%);
+}
+
 /**** RODAPE ****/
 #footer-info {
     background-color: var(--rc-green-dark-light);
@@ -216,20 +250,19 @@ a:hover .fa-linkedin {
         margin-left: 0px;
     }
 
-    .texto_banner {
+    .banner-texto {
         text-align: center;
         margin-left: 0px;
         margin-top: 60px;
     }
-    .texto_banner h1 {
+    .banner-texto h1 {
         font-size: 3.5rem;
     }
-    .texto_banner h2 {
+    .banner-texto h1 > span {
         font-size: 3rem;
     }
-
-    .app_img img {
-        max-width: 100%;
+    .banner-texto p {
+        font-size: 1.2rem;
     }
 
     #aplicativo-texto {
@@ -239,7 +272,6 @@ a:hover .fa-linkedin {
     #footer-info {
         text-align: justify;       
     }
-
     #footer-info h3 {
         padding-top: 10px;
         margin-bottom: 15px;

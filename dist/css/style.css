@@ -205,6 +205,19 @@ img {
 #parceiros-logos a:hover img {
     filter: brightness(75%);
 }
+/**** Fale conosco****/
+#informacoesFaleConosco h2 {
+    color: var(--rc-turquoise);
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 24px;
+}
+#informacoesFaleConosco p{
+    font-size: 1.2rem;
+}
+#formularioContato{
+    padding-bottom: 50px;
+}
 
 /**** RODAPE ****/
 #footer-info {

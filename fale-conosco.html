@@ -66,10 +66,84 @@
         <section id="fale-conosco">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <!-- Titulo da pagina -->
+                    <div class="col-12" id="faleConoscoTitulo">
                         <h1>Como você prefere falar conosco?</h1>
-                        <p>Lorem ipsum metus tempus aenean aliquam senectus vulputate suscipit eget lacus quam posuere, cubilia sem eleifend sed nam felis dapibus adipiscing metus nisi enim. etiam mauris scelerisque a tellus ac aptent habitasse eget tempor inceptos odio sollicitudin aliquam dolor habitasse aenean amet sit, ligula sollicitudin felis gravida eu pulvinar sagittis dictum convallis nam gravida sed metus nibh mollis taciti phasellus. urna quam tincidunt eleifend id senectus dapibus dui cubilia, platea posuere sagittis consequat orci integer rhoncus, volutpat dapibus consectetur cras cursus aliquam justo. netus purus rhoncus aliquam rutrum ante ornare interdum leo, nisi tortor lectus rutrum congue purus phasellus donec, posuere urna sociosqu sollicitudin arcu tellus sem.</p>
-                        <p>Fermentum auctor lorem quisque mauris malesuada curabitur torquent proin sed gravida, vestibulum feugiat ac torquent enim orci mauris luctus quam, lacus torquent egestas pharetra et lectus eu felis quisque. felis risus dictumst nec quam ornare semper dapibus neque nostra, orci id varius sem mi eleifend gravida vel turpis, id aliquet nisl nam viverra dapibus class quis.</p>
+                    </div>
+                    <!-- Informações de contato -->
+                    <div class="col-lg-6 col-md-6" id="informacoesFaleConosco">
+                        <h2>
+                            Precisa falar com a gente?
+                        </h2>
+                        <p>
+                            Você pode ligar para o número de telefone: <br>
+                            <p style="font-weight: 500; font-size: 1.4rem;">
+                                (31) 2222 - 5555
+                            </p>
+                        </p>
+                       
+                        <h2>
+                            Quais os materiais não recicláveis?
+                        </h2>
+                        <p>
+                            Tem alguma duvida? Podemos te ajudar pelo nosso canal de &nbsp e-mail. <br>
+                            <p style="font-weight: 500; font-size: 1.4rem;">
+                                capcoletaseletiva@gmail.com
+                            </p>
+                        </p>
+                        
+                        <h2>
+                            Ainda não achou o que queria?
+                        </h2>
+                        <p>
+                            Então nos mande uma mensagem preenchendo o formulário abaixo:
+                        </p>
+                    </div>
+                    <!-- Imagem-->
+                    <div class="col-lg-6 col-md-6" id="imagemAtendente">
+                        <img src="/img/bg-fale_conosco.png" alt="Fale conosco">
+                    </div>
+                    <!-- Formulário-->
+                    <div class="col-lg-8 col-md-8 col-sm-12" id="formularioContato">
+                        <!-- Formulario de contato (Utiliza o Static forms <https://www.staticforms.xyz> para envio das informações)-->
+                        <form action="https://api.staticforms.xyz/submit" method="POST">
+                            <!-- Input da API para chave de acesso (Provisoriamente a chave envia para email de teste)-->
+                            
+                            <input type="hidden" name="accessKey" value="a1c59842-c71b-4d4d-89bb-3b21b040930d">
+                            <!-- Caixas de textos-->
+                            <div class="col-8">
+                                <!-- Caixa de nome -->
+                                <div class="form-group">
+                                    <input type="text" name="$Nome:" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                                </div>
+                                <!-- Caixa de e-mail -->
+                                <div class="form-group">
+                                    <input type="text" name="$E-mail:" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                                </div>
+                                <!-- Caixa de Telefone -->
+                                <div class="form-group">
+                                    <input type="text" name="$Telefone:" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
+                                </div>
+                            </div>
+                            <!-- Caixas de assunto e mensagem-->
+                            <div class="col-12">
+                                <!-- Caixa de Assunto -->
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+                                </div>
+                                <!-- Caixa de mensagem -->
+                                <div class="form-group">
+                                    <textarea name="$Mensagem:" class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Mensagem"></textarea>
+                                </div>
+                            </div>
+                            <!-- Recarregar a pagina -->
+                            <input type="hidden" name="redirectTo" value="https://reciclafacil.github.io/reciclaapp/fale-conosco.html">
+                            <!-- Botão de enviar -->
+                            <div class="col-lg-2 col-md-2 col-sm-12 " id="botaoEnviar" style="float: right;">
+                                <button type="submit" class="btn btn-primary" style="background-color: green; padding-left: 25px; padding-right: 25px;">Enviar</button>
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
             </div>

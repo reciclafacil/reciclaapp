@@ -1,0 +1,21 @@
+#parcerias-logos {
+  margin: 50px 0;
+}
+#parcerias-logos .row > div {
+  margin-bottom: 50px;
+  text-align: center;
+}
+#parcerias-logos a:hover img {
+  filter: brightness(75%);
+}
+#parcerias-form {
+  background-color: var(--rc-gray-light);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#parcerias-form h2 {
+  color: var(--rc-turquoise);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+}

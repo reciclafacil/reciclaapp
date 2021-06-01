@@ -1,0 +1,147 @@
+#banner {
+  background-image: url('../../img/banner.png');
+  height: 647px;
+}
+.banner-texto {
+  margin-top: 60px;
+  padding-left: 40px;
+}
+.banner-texto h1 {
+  color: var(--rc-turquoise);
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: -0.15rem;
+  line-height: 3.4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.banner-texto h1 > span {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.banner-texto p {
+  color: #47525e;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.2;
+}
+
+#informacoes {
+  background-color: var(--rc-green-light);
+  color: white;
+  text-align: center;
+  padding-top: var(--rc-section-padding);
+  padding-bottom: var(--rc-section-padding);
+
+}
+#informacoes i {
+  background-color: var(--rc-green-light-dark);
+  border-radius: 50%;
+  font-size: 55px;
+  margin-bottom: 2rem;
+  padding: 35px;
+}
+#informacoes p {
+  margin: 0;
+}
+
+#aplicativo {
+  padding-top: var(--rc-section-padding);
+  padding-bottom: var(--rc-section-padding);
+}
+#aplicativo .btn-google-play {
+  margin-top: 15px;
+}
+.aplicativo-imagem {
+  padding: 0px;
+}
+.aplicativo-texto > div {
+  margin-top: 50%;
+  transform: translateY(-25%);
+}
+.aplicativo-texto h2 {
+  margin-bottom: 1rem;
+}
+.aplicativo-texto p {
+  color: var(--gray-dark-light);
+}
+
+#opiniao-usuarios {
+  background-color: var(--rc-gray-light);
+  padding-top: var(--rc-section-padding);
+  padding-bottom: var(--rc-section-padding);
+
+}
+#opiniao-usuarios .carousel-control-prev,
+#opiniao-usuarios .carousel-control-next {
+  width: auto;
+}
+#opiniao-usuarios .carousel-control-prev {
+  padding-left: 10px;
+}
+#opiniao-usuarios .carousel-control-next {
+  padding-right: 10px;
+}
+#opiniao-usuarios .carousel-control-next i,
+#opiniao-usuarios .carousel-control-prev i {
+  color: var(--rc-green-dark-light);
+}
+#opiniao-usuarios .usuario-imagem {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  height: 90px;
+  position: relative;
+  width: 90px;
+}
+#opiniao-usuarios .usuario-texto {
+  color: var(--rc-turquoise);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-left: 30px;
+  min-height: 230px;
+  padding-top: 15px;
+  padding-left: 40px;
+  position: relative;
+  width: 80%;
+}
+#opiniao-usuarios .usuario-quote {
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+#opiniao-usuarios .usuario-quote i {
+  font-size: 30px;
+  opacity: 50%;
+}
+#opiniao-usuarios .usuario-nome {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 540px) {
+  .banner-texto {
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 60px;
+  }
+  .banner-texto h1 {
+      font-size: 3.5rem;
+  }
+  .banner-texto h1 > span {
+      font-size: 3rem;
+  }
+  .banner-texto p {
+      font-size: 1.2rem;
+  }
+
+  #aplicativo-texto {
+      text-align: center;
+  }
+}

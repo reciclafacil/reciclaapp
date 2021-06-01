@@ -1,0 +1,13 @@
+#informacoesFaleConosco h2 {
+  color: var(--rc-turquoise);
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 24px;
+}
+#informacoesFaleConosco p {
+  font-size: 1.2rem;
+}
+#formularioContato {
+  padding-left: 0;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,16 @@
+#projetos-informacoes {
+  margin-top: 50px;
+}
+#projetos-informacoes h2 {
+  color: var(--rc-turquoise);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+}
+#projetos-informacoes .container-fluid > .row {
+  padding-top: var(--rc-section-padding);
+  padding-bottom: var(--rc-section-padding);
+}
+#projetos-informacoes .container-fluid > .row:nth-child(odd) {
+  background-color: var(--rc-gray-light);
+}

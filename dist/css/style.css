@@ -20,6 +20,10 @@ a:hover .fa-linkedin {
     color: var(--rc-color-linkedin);
 }
 
+img {
+    max-width: 100%;
+}
+
 .btn-default {
     background-color: white;
     border-color: var(--rc-turquoise);
@@ -39,8 +43,22 @@ a:hover .fa-linkedin {
     text-transform: uppercase;
 }
 
-img {
-    max-width: 100%;
+.breadcrumb {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.breadcrumb-item,
+.breadcrumb-item a {
+    color: var(--dark);
+}
+.breadcrumb-item a:hover {
+    color: var(--rc-blue);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
 }
 
 /**** CORPO *****/
@@ -73,7 +91,7 @@ img {
 }
 
 #informacoes {
-    background-color: var(--rc-green-light);
+    background-color: var(--rc-green-light-dark);
     color: white;
     text-align: center;
     padding-top: var(--rc-section-padding);
@@ -81,7 +99,7 @@ img {
     
 }
 #informacoes i {
-    background-color: var(--rc-green-light-dark);
+    background-color: var(--rc-green);
     border-radius: 50%;
     font-size: 55px;
     margin-bottom: 2rem;

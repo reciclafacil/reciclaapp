@@ -1,0 +1,171 @@
+/**** Reciclagem****/
+
+
+#texto-reciclagem h2{
+
+    color: var(--rc-turquoise);
+    
+}
+
+#video-reciclagem iframe{
+    width: 540px;
+    height: 315px;
+}
+
+#reciclagem-dois{
+
+    background-color: var(--rc-green-light);
+    padding: 50px;
+    color: #fff;
+    
+}
+#reciclagem-dois img{
+
+    width: 100%;
+}
+
+
+#materiais-plastico{
+
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c91313;
+    padding-bottom: 25px;
+    
+
+}
+
+#materiais-vidro{
+
+    background-color: var(--rc-gray-light);
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #00834f;
+    padding-bottom: 25px;
+    
+
+}
+
+#materiais-metal{
+
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #ebc92b;
+    padding-bottom: 25px;
+    
+
+}
+
+#materiais-papel{
+
+    background-color: var(--rc-gray-light);
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #006980;
+    padding-bottom: 25px;
+    
+
+}
+
+#imagem-plas-area{
+    background-color:#ee797b ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-vidro-area{
+    background-color:#0bad72 ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-metal-area{
+    background-color:#eed979 ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-papel-area{
+    background-color:#0b94ad ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+#materiais-img-plastico{
+    
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo-materiais{
+
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+#lista-area h2 {
+
+    color: #707982;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    
+}
+
+.lista-reciclaveis li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.18rem;
+    margin: 10px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c0c0c0;
+    
+}
+
+ul.lista-reciclaveis {
+        
+    list-style: square url(/img/ball.png);
+   
+}
+
+.lista-rejeitos li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.18rem;
+    margin: 10px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c0c0c0;
+    
+}
+
+ul.lista-rejeitos {
+        
+    list-style: square url(/img/x.png);
+   
+}

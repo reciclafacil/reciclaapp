@@ -25,7 +25,7 @@ img {
 }
 
 .btn-default {
-    background-color: white;
+    background-color: transparent;
     border-color: var(--rc-turquoise);
     color: var(--rc-turquoise);
     font-weight: 600;
@@ -223,6 +223,18 @@ img {
 #parceiros-logos a:hover img {
     filter: brightness(75%);
 }
+#parceiros-form {
+    background-color: var(--rc-gray-light);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#parceiros-form h2 {
+    color: var(--rc-turquoise);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 4.2rem;
+}
+
 /**** Fale conosco****/
 #informacoesFaleConosco h2 {
     color: var(--rc-turquoise);

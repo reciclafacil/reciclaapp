@@ -44,6 +44,24 @@ img {
 }
 
 /**** CORPO ****/
+.breadcrumb {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.breadcrumb-item,
+.breadcrumb-item a {
+    color: var(--dark);
+}
+.breadcrumb-item a:hover {
+    color: var(--rc-blue);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
 .pagina-interna h1 {
     color: var(--rc-turquoise);
     font-size: 3rem;

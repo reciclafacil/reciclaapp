@@ -1,5 +1,12 @@
 /**** Reciclagem****/
 
+#reciclagem{
+    background-image: url(/img/bg-reciclagem.png);
+    background-size: 50% ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom
+}
 
 #texto-reciclagem h2{
 

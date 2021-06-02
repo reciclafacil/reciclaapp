@@ -147,7 +147,7 @@
 
 ul.lista-reciclaveis {
         
-    list-style: square url(img/ball.png);
+    list-style: square url(../../img/ball.png);
    
 }
 
@@ -166,6 +166,6 @@ ul.lista-reciclaveis {
 
 ul.lista-rejeitos {
         
-    list-style: square url(img/x.png);
+    list-style: square url(../../img/x.png);
    
 }

@@ -13,6 +13,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="dist/css/variables.css">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/sobre.css">
+    <link rel="stylesheet" href="dist/css/home.css">
 </head>
 <body>
     <header>
@@ -64,20 +66,75 @@
         </nav>
     </header>
     
-    <main class="pagina-interna">
+    <section class="pagina-interna">
         <section id="sobre">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <h1>Quem somos</h1>
-                        <p>Lorem ipsum metus tempus aenean aliquam senectus vulputate suscipit eget lacus quam posuere, cubilia sem eleifend sed nam felis dapibus adipiscing metus nisi enim. etiam mauris scelerisque a tellus ac aptent habitasse eget tempor inceptos odio sollicitudin aliquam dolor habitasse aenean amet sit, ligula sollicitudin felis gravida eu pulvinar sagittis dictum convallis nam gravida sed metus nibh mollis taciti phasellus. urna quam tincidunt eleifend id senectus dapibus dui cubilia, platea posuere sagittis consequat orci integer rhoncus, volutpat dapibus consectetur cras cursus aliquam justo. netus purus rhoncus aliquam rutrum ante ornare interdum leo, nisi tortor lectus rutrum congue purus phasellus donec, posuere urna sociosqu sollicitudin arcu tellus sem.</p>
-                        <p>Fermentum auctor lorem quisque mauris malesuada curabitur torquent proin sed gravida, vestibulum feugiat ac torquent enim orci mauris luctus quam, lacus torquent egestas pharetra et lectus eu felis quisque. felis risus dictumst nec quam ornare semper dapibus neque nostra, orci id varius sem mi eleifend gravida vel turpis, id aliquet nisl nam viverra dapibus class quis.</p>
+                        <p>O CAP Coleta Seletiva começou lá em 2010, com uma ideia de alunos da UFSJ/CAP para implementar a Coleta Seletiva no campus. Ao longo dos anos, fizemos várias intervenções, como aquisição de lixeiras para separar o lixo reciclável do lixo comum, identificação dessas lixeiras, visitas técnicas ambientais, palestras, eventos da semana do meio ambiente, eventos na cidade de Ouro Branco para divulgar o projeto e visitas a associação de catadores da cidade. A foto é um conjunto de fotos das nossas ações. </p>
+                        <p>Em 2021, o Programa promoveu um concurso no Instagram, no mês de maio, com o intuito de despertar o pensamento crítico acerca do desperdício, do consumo exagerado e do descarte inadequado de resíduos. Além disso, no mês de junho foi realizada a Semana do Meio Ambiente, que promoveu palestras de diversos temas ligados à educação ambiental, reciclagem e tratamento de resíduos.</p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Bloco de formulario-->
+        <section id="formulario">
+            <div class="container">
+                <div class="row">
+                    <!-- Imagem -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 imgForm">
+                        <img src="img/form.png" alt="imagemForm">
+                    </div>
+                    <!-- Botão -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 botao">
+                        <h1>ReciclaApp</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, fugit.</p>
+                        <button type="button" class="btn btn-default">ReciclaApp</button>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    
+        <section id="apiFeed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12 ">
+                        <!-- Intagram -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 instaTitulo">
+                            <h1>Siga-nos no Instagram!</h1>
+                        </div>
+                        <body>
+                            <div style="margin-top: 40px">
+                                <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fotos</font></font></h1>
+                            </div>
+                            <div id="instagram"></div>
+                            <script>
+                                var token = 'AQD0fZhOIdfkkClp2f97Tt7oTY1JGv2keAeUWaW0NMm5Tmeut0ymBzS6wu5Mc0BMGG2cu1t5A_5ZJmOg7QnKwqqitfYOQAUd8khgQkO_8L0jXvEUXXMRqw_MdvShGxAhOHfW78aGlI_r5211AB0vPIlmDcPZuOg8ibb-x5mdmiSuwM1htUwFk1CH2eCSaBcyU-fW6Z2vgGhcgnZtuXP7WYILMp1zUcZPjbkEAjpFr6rpFg'
+                                fetch('https://api.instagram.com/v1/users/self/media/recent?access_token=' + token)
+                                    .then(function(response) { return response.json()})
+                                    .then(function(response) {
+                                        response.data.map(value => {
+                                            try {
+                                                var img = document.createElement('img')
+                                                img.src = value.images.low_resolution.url
+                                                img.style = 'margin-left: 15px; margin: 5px'
+                                                var src = document.getElementById('instagram')
+                                                src.appendChild(img)
+                                            } catch (err) {
+                                                console.log(err)
+                                            }
+                                            
+                                        })
+                                    })
+                            </script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Tradutor"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugerir uma tradução melhor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+                        
+                        <div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     <footer>
         <!-- Rodapé (J.Paulo)-->
         <div id="footer-info">

@@ -13,7 +13,6 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="dist/css/variables.css">
     <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="dist/css/parcerias.css">
 </head>
 <body>
     <header>
@@ -56,17 +55,15 @@
             </div>
         </nav>
         <nav aria-label="breadcrumb">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Início</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Parcerias</li>
-                </ol>
-            </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Parcerias</li>
+            </ol>
         </nav>
     </header>
     
     <main class="pagina-interna">
-        <section id="parcerias">
+        <section id="parceiros">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -76,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section id="parcerias-logos">
+        <section id="parceiros-logos">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4">
@@ -100,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section id="parcerias-form">
+        <section id="parceiros-form">
             <div class="container-fluid">
                 <div class="row">
                     <div class="container">
@@ -112,7 +109,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <form action="https://api.staticforms.xyz/submit" method="POST">
+                                <form id="staticform">
                                     <input type="hidden" name="accessKey" value="d3af942d-b4a0-45f8-82a7-f5a76e84baaf">
                                     <input type="hidden" name="redirectTo" value="https://reciclafacil.github.io/reciclaapp/parcerias.html">
                                     <div class="row">
@@ -186,5 +183,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    <script src="dist/js/form.js"></script>
+  </body>
 </html>

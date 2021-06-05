@@ -3,7 +3,7 @@ $(function() {
   $form.submit(function(event) {
     event.preventDefault();
     $.ajax({
-      url: 'https://api.staticforms.xyz/submit',
+      url: 'https://api.plos.org/search?q=title:DNA',
       type: 'POST',
       dataType: 'json',
       data: $form.serialize(),

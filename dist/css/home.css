@@ -1,5 +1,7 @@
 #banner {
   background-image: url('../../img/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
   height: 647px;
 }
 .banner-texto {
@@ -27,7 +29,7 @@
 }
 
 #informacoes {
-  background-color: var(--rc-green-light);
+  background-color: var(--rc-green-light-dark);
   color: white;
   text-align: center;
   padding-top: var(--rc-section-padding);
@@ -35,7 +37,7 @@
 
 }
 #informacoes i {
-  background-color: var(--rc-green-light-dark);
+  background-color: var(--rc-green);
   border-radius: 50%;
   font-size: 55px;
   margin-bottom: 2rem;
@@ -51,13 +53,6 @@
 }
 #aplicativo .btn-google-play {
   margin-top: 15px;
-}
-.aplicativo-imagem {
-  padding: 0px;
-}
-.aplicativo-texto > div {
-  margin-top: 50%;
-  transform: translateY(-25%);
 }
 .aplicativo-texto h2 {
   margin-bottom: 1rem;
@@ -143,5 +138,12 @@
 
   #aplicativo-texto {
       text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .aplicativo-texto > div {
+    margin-top: 50%;
+    transform: translateY(-25%);
   }
 }

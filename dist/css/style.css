@@ -105,7 +105,7 @@ img {
     margin-bottom: 0;
 }
 
-#instafeed-container img{ 
+#instafeed-container a img{ 
     width: 25%;
 }
 

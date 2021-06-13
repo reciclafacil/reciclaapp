@@ -105,10 +105,6 @@ img {
     margin-bottom: 0;
 }
 
-#instafeed-container a img{ 
-    width: 25%;
-}
-
 @media screen and (max-width: 540px) {
     .menu {
         text-align: center;

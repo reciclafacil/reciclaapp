@@ -112,27 +112,26 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <form action="https://api.staticforms.xyz/submit" method="POST">
-                                    <input type="hidden" name="accessKey" value="d3af942d-b4a0-45f8-82a7-f5a76e84baaf">
-                                    <input type="hidden" name="redirectTo" value="https://reciclafacil.github.io/reciclaapp/parcerias.html">
+                                <form id="formulario">
+                                    
                                     <div class="row">
                                         <div class="col-12 col-md-8">
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                                                <input type="text" name="name" class="form-control" id="nomeInput" placeholder="Nome" required maxlength="30" minlength="2">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                                                <input type="email" name="email" class="form-control" id="emailInput" placeholder="E-mail" required maxlength="50">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" name="phone" class="form-control" placeholder="Telefone" required>
+                                                <input type="text" name="phone" class="form-control" id="telInput" placeholder="Telefone" required maxlength="11" minlength="8">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
+                                                <input type="text" name="subject" class="form-control" id="assuntoInput" placeholder="Assunto" required>
                                             </div>
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control" rows="8" placeholder="Mensagem" required></textarea>
+                                                <textarea name="message" class="form-control" id="mensagemInput" rows="8" placeholder="Mensagem" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12 text-right">
@@ -183,6 +182,7 @@
         </div>
     </footer>
     <!-- Scripts -->
+    <script src="dist/js/formulario_submit.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="dist/css/variables.css">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/fale-conosco.css">
+
 </head>
 <body>
     <header>
@@ -106,44 +107,34 @@
                     <div class="col-lg-6 col-md-6" id="imagemAtendente">
                         <img src="img/bg-fale_conosco.png" alt="Fale conosco">
                     </div>
+                    
                     <!-- Formulário-->
                     <div class="col-lg-8 col-md-8 col-sm-12" id="formularioContato">
-                        <!-- Formulario de contato (Utiliza o Static forms <https://www.staticforms.xyz> para envio das informações)-->
-                        <form action="https://api.staticforms.xyz/submit" method="POST">
-                            <!-- Input da API para chave de acesso (Provisoriamente a chave envia para email de teste)-->
-                            
-                            <input type="hidden" name="accessKey" value="a1c59842-c71b-4d4d-89bb-3b21b040930d">
+                        <form id="formulario">
                             <!-- Caixas de textos-->
                             <div class="col-8">
-                                <!-- Caixa de nome -->
                                 <div class="form-group">
-                                    <input type="text" name="$Nome:" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                                    <input type="text" name="Nome:" class="form-control" id="nomeInput" placeholder="Nome" required maxlength="30" minlength="2">
                                 </div>
-                                <!-- Caixa de e-mail -->
                                 <div class="form-group">
-                                    <input type="text" name="$E-mail:" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                                    <input type="email" name="E-mail:" class="form-control" id="emailInput" placeholder="E-mail" required maxlength="50">
                                 </div>
-                                <!-- Caixa de Telefone -->
                                 <div class="form-group">
-                                    <input type="text" name="$Telefone:" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
+                                    <input type="text" name="Telefone:" class="form-control" id="telInput" placeholder="Telefone" onkeyup="return mascara_tel(event)" maxlength="14">
                                 </div>
                             </div>
                             <!-- Caixas de assunto e mensagem-->
                             <div class="col-12">
-                                <!-- Caixa de Assunto -->
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
+                                    <input type="text" name="Assunto" class="form-control" id="assuntoInput" placeholder="Assunto" required>
                                 </div>
-                                <!-- Caixa de mensagem -->
                                 <div class="form-group">
-                                    <textarea name="$Mensagem:" class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Mensagem"></textarea>
+                                    <textarea name="Mensagem:" class="form-control" id="mensagemInput" rows="8" placeholder="Mensagem" required maxlength="500"></textarea>
                                 </div>
                             </div>
-                            <!-- Recarregar a pagina -->
-                            <input type="hidden" name="redirectTo" value="https://reciclafacil.github.io/reciclaapp/fale-conosco.html">
                             <!-- Botão de enviar -->
-                            <div class="col-lg-2 col-md-2 col-sm-12 " id="botaoEnviar" style="float: right;">
-                                <button type="submit" class="btn btn-primary" style="background-color: green; padding-left: 25px; padding-right: 25px;">Enviar</button>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-default">Enviar</button>
                             </div>
                             
                         </form>
@@ -152,7 +143,6 @@
             </div>
         </section>
     </main>
-    
     <footer>
         <!-- Rodapé (J.Paulo)-->
         <div id="footer-info">
@@ -188,6 +178,7 @@
         </div>
     </footer>
     <!-- Scripts -->
+    <script src="dist/js/formulario_submit.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

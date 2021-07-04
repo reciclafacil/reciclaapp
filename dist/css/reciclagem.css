@@ -1,126 +1,202 @@
-#reciclagem {
-    background-image: url(../../img/bg-reciclagem.png);
+/**** Reciclagem****/
+
+#reciclagem{
+    background-image: url();
     background-size: 50% ;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom
 }
-#reciclagem h2,
-.reciclagem-materiais h2 {
+#texto-reciclagem h2, h5{
+
     color: var(--rc-turquoise);
-    font-weight: bold;
+    
+}
+#texto-reciclagem li {
+
+    color: var(--rc-turquoise);
+}
+#texto-reciclagem {
+    margin-top: 30px ;
     margin-bottom: 20px;
 }
-#reciclagem p {
-    line-height: 1.5em;
-    text-align: justify;
-}
-#reciclagem iframe {
-    width: 100%;
+
+#video-reciclagem iframe{
+    width: 540px;
     height: 311px;
+   margin-left: 30px;
+   margin-top: 30px;
+
 }
 
-#reciclagem-grafico {
-    background-color: var(--rc-green);
-    color: white;
-    padding-top: var(--rc-section-padding);
-    padding-bottom: var(--rc-section-padding);
-}
-#reciclagem-grafico p {
-    text-align: justify;
-}
-#reciclagem-grafico-gc {
-    width: 100%;
-    height: 300px;
-}
-#reciclagem-grafico-gc g[aria-labelledby="id-66-title"] {
-    visibility: hidden;
+#video-reciclagem p{
+    margin-left: 30px;
 }
 
-.reciclagem-materiais {
-    border-bottom-width: 0px;
-    border-color: lightgray;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 4px;
+#video-reciclagem{
+
+    text-align: center;
+}
+
+#reciclagem-dois{
+
+    background-color: var(--rc-green-light);
+    padding: 50px;
+    color: #fff;
+    
+}
+#reciclagem-dois h2{
+
+    text-align: center;
+}
+
+
+
+#materiais-plastico{
+
+    border-bottom: 0px;
+    border-top: 4px;
     border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c91313;
     padding-bottom: 25px;
+    
+
 }
-.reciclagem-materiais h2 {
-    font-size: 3rem;
+
+#materiais-vidro{
+
+    background-color: var(--rc-gray-light);
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #00834f;
+    padding-bottom: 25px;
+    
+
+}
+
+#materiais-metal{
+
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #ebc92b;
+    padding-bottom: 25px;
+    
+
+}
+
+#materiais-papel{
+
+    background-color: var(--rc-gray-light);
+    border-bottom: 0px;
+    border-top: 4px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #006980;
+    padding-bottom: 25px;
+    
+
+}
+
+#imagem-plas-area{
+    background-color:#ee797b ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-vidro-area{
+    background-color:#0bad72 ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-metal-area{
+    background-color:#eed979 ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#imagem-papel-area{
+    background-color:#0b94ad ;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+#materiais-img-plastico{
+    
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo-materiais{
+
     margin-top: 30px;
     margin-left: 30px;
 }
-.reciclagem-materiais h3 {
+
+
+#lista-area h2 {
+
     color: #707982;
-    font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 2.5rem;
+    
 }
-.reciclagem-materiais ul {
-    list-style-image: url(../../img/x.png);
-    list-style-position: inside;
-    padding: 0;
-}
-.reciclagem-materiais div[class^="col"]:first-of-type ul {
-    list-style-image: url(../../img/ball.png);
-}
-.reciclagem-materiais li {
-    font-size: 1.12rem;
-    border-color: #dedede;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 1px;
+
+.lista-reciclaveis li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.18rem;
+    margin: 10px;
+    border-bottom: 1px;
+    border-top: 0px;
     border-style: solid;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 15px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c0c0c0;
+    
 }
-.reciclagem-materiais li:last-child {
-    border-bottom-width: 1px;
+
+ul.lista-reciclaveis {
+        
+    list-style: square url(/img/ball.png);
+    
+   
 }
-.reciclagem-materiais-plastico {
-    border-color: #c91313;
+
+.lista-rejeitos li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.18rem;
+    margin: 10px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #c0c0c0;
 }
-.reciclagem-materiais-vidro {
-    border-color: #00834f;
-}
-.reciclagem-materiais-metal {
-    border-color: #ebc92b;
-}
-.reciclagem-materiais-papel{
-    border-color: #006980;
-}
-.material-imagem {
-    background-color: lightgray;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 170px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-.material-imagem img {
-    max-height: 80%;
-    max-width: 80%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.reciclagem-materiais-plastico .material-imagem {
-    background-color:#ee797b;
-}
-.reciclagem-materiais-vidro .material-imagem {
-    background-color: #0bad72;
-}
-.reciclagem-materiais-metal .material-imagem {
-    background-color: #eed979;
-}
-.reciclagem-materiais-papel .material-imagem {
-    background-color: #0b94ad;
+    
+    
+   
+
+ul.lista-rejeitos {
+        
+    list-style: square url(/img/x.png);
+    
+   
 }

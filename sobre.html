@@ -65,8 +65,8 @@
             </div>
         </nav>
     </header>
-    
-    <section class="pagina-interna">
+
+    <main class="pagina-interna">
         <section id="sobre">
             <div class="container">
                 <div class="row">
@@ -78,89 +78,37 @@
                 </div>
             </div>
         </section>
-    </section>
-    <!-- Bloco de formulario-->
-        <section id="formulario">
+
+        <section id="aplicativo">
             <div class="container">
                 <div class="row">
                     <!-- Imagem -->
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 imgForm">
-                        <img src="img/form.png" alt="imagemForm">
+                    <div class="col-12 col-lg-4 offset-lg-1">
+                        <img src="img/form.png" alt="Imagem de formulário">
                     </div>
                     <!-- Botão -->
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 botao">
-                        <h1>ReciclaApp</h1>
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <h2>ReciclaApp</h2>
                         <p>Este aplicativo foi desenvolvido a fim de divulgar e promover a Coleta Seletiva e a reciclagem na cidade de Ouro Branco</p>
                         <p>Dê-nos um feedback do app pelo nosso formulário online:</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKO1d_qRK13YDGFYfMVyyh9UnyRMhyqgTMYXUMPbIs00ouVQ/viewform" target="_blank"><button type="button" class="btn btn-default">ReciclaApp</button></a>
-                        
+                        <a class="btn btn-default btn-default-light" href="https://docs.google.com/forms/d/e/1FAIpQLSfKO1d_qRK13YDGFYfMVyyh9UnyRMhyqgTMYXUMPbIs00ouVQ/viewform" target="_blank">Sua opinião</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="apiFeed">
+
+        <section id="instagram">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-12 ">
-                        <!-- Intagram -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 instaTitulo">
-                            <h1>Siga-nos no Instagram!</h1>
-                        </div>
-                        <body>
-                            <div style="margin-top: 40px">
-                                <h1>Fotos</h1>
-                            </div>
-                            <div id="instafeed-container"></div>
-
-                            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-                            <script type="text/javascript">
-                                var userFeed = new Instafeed({
-                                    get: 'user',
-                                    target: "instafeed-container",
-                                    resolution: 'low_resolution',
-                                    accessToken: 'IGQVJXcU5zd2hyUGpiZAGhwXzVFRFZACRGphNmNDZAXBpVmUyYTRUWFlhc2JiMmNCRHJNbEJSb29HTUJNS1hlR1R4T1dIR29XZAmxmbjJiMklZAalc3TmFBMG41OHE1ME1EUzZA3dE5za2RHUHZAqZAmh5N1pzLQZDZD'
-                                });
-                                userFeed.run();
-                            </script>
-                    </body>
+                    <div class="col-12">
+                        <h2>Siga-nos no Instagram!</h2>
+                        <div id="instafeed-container"></div>
                     </div>
-                    <!-- Maps -->
-                    <head>
-                        <title>Meu mapa exemplo</title>
-                            <style>
-                                #mapa {
-                                height:400px;
-                                width:400px;
-                                }
-                                    </style>
-                                    </head>
-                                    <body>
-                                        <div id="mapa"></div>
-                                            <script>
-
-                                                function inicializar() {
-                                                var coordenadas = {lat: -20.14825, lng: -44.91543};
-
-                                                var mapa = new google.maps.Map(document.getElementById('mapa'), {
-                                                zoom: 15,
-                                                center: coordenadas 
-                                                });
-
-                                                var marker = new google.maps.Marker({
-                                                position: coordenadas,
-                                                map: mapa,
-                                                title: 'Meu marcador'
-                                                });
-                                                }
-                                   </script>
-                                   <script async defer 
-                                           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIVTxyKj-VtYHso2y5nDWH9H1PI4osw78">
-                                   </script>
-                                   </body>
-
                 </div>
             </div>
         </section>
+    </main>
+
     <footer>
         <!-- Rodapé (J.Paulo)-->
         <div id="footer-info">
@@ -198,5 +146,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            accessToken: 'IGQVJXcU5zd2hyUGpiZAGhwXzVFRFZACRGphNmNDZAXBpVmUyYTRUWFlhc2JiMmNCRHJNbEJSb29HTUJNS1hlR1R4T1dIR29XZAmxmbjJiMklZAalc3TmFBMG41OHE1ME1EUzZA3dE5za2RHUHZAqZAmh5N1pzLQZDZD'
+        });
+        userFeed.run();
+    </script>
 </body>
 </html>

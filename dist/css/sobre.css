@@ -1,8 +1,11 @@
 #sobre {
     background-image: url('../../img/bg-sobre.png');
+    background-position-x: left;
+    background-position-y: bottom;
     background-repeat: no-repeat;
-    height: 480px;
-  }
+    padding-bottom: 90px;
+}
+
   .botao{
     text-align: left;
     margin-top: 20px;
@@ -10,28 +13,31 @@
   .botao button{
     margin-top: 15px;
   }
-.imgForm img{
-    width: 60%;
-}
-#formulario {
-    background-color: var(--rc-green-light);
+
+#aplicativo {
+    background-color: var(--rc-green);
     color: white;
-    text-align: center;
     padding-top: var(--rc-section-padding);
     padding-bottom: var(--rc-section-padding);
-  
-  }
-  #formulario p {
-    margin: 0;
-  }
-  .pagina-interna{
-      margin-bottom: 0px;
-  }
-  #apiFeed h1 {
+}
+#aplicativo h2 {
+    font-weight: bold;
+}
+
+#instagram {
+    padding-top: var(--rc-section-padding);
+    padding-bottom: var(--rc-section-padding);
+}
+#instagram h2 {
     color: var(--rc-turquoise);
     font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top: var(--rc-section-padding);
-    margin-bottom: var(--rc-title-bottom);
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+#instafeed-container a { 
+    display: inline-block;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 30px;
 }

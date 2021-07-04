@@ -12,7 +12,8 @@
     margin-bottom: 20px;
 }
 #reciclagem p {
-    line-height: 1.7em;
+    line-height: 1.5em;
+    text-align: justify;
 }
 #reciclagem iframe {
     width: 100%;
@@ -25,8 +26,15 @@
     padding-top: var(--rc-section-padding);
     padding-bottom: var(--rc-section-padding);
 }
-#reciclagem-grafico .grafico-container {
-    padding: 0 80px;
+#reciclagem-grafico p {
+    text-align: justify;
+}
+#reciclagem-grafico-gc {
+    width: 100%;
+    height: 300px;
+}
+#reciclagem-grafico-gc g[aria-labelledby="id-66-title"] {
+    visibility: hidden;
 }
 
 .reciclagem-materiais {

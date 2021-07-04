@@ -2,18 +2,6 @@
 a {
     color: black;
 }
-a:hover .fa-facebook {
-    color: var(--rc-color-facebook);
-}
-a:hover .fa-instagram {
-    color: var(--rc-color-instagram);
-}
-a:hover .fa-youtube {
-    color: var(--rc-color-youtube);
-}
-a:hover .fa-linkedin {
-    color: var(--rc-color-linkedin);
-}
 
 img {
     max-width: 100%;
@@ -85,6 +73,18 @@ img {
 #footer-info a {
     color: white;
 }
+#footer-info a:hover .fa-facebook {
+    background-color: var(--rc-color-facebook);
+}
+#footer-info a:hover .fa-instagram {
+    background-color: var(--rc-color-instagram);
+}
+#footer-info a:hover .fa-youtube {
+    background-color: var(--rc-color-youtube);
+}
+#footer-info a:hover .fa-linkedin {
+    background-color: var(--rc-color-linkedin);
+}
 #footer-info .empresa-info i {
     margin-left: 16px;
     margin-right: 8px;
@@ -113,7 +113,7 @@ img {
     .menu {
         text-align: center;
     }
-    .menu div ul li{
+    .menu div ul li {
         margin-left: 0px;
     }
 

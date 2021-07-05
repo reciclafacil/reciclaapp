@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="dist/css/variables.css">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/sobre.css">
-    <link rel="stylesheet" href="dist/css/home.css">
 </head>
 <body>
     <header>
@@ -152,7 +151,8 @@
             get: 'user',
             target: "instafeed-container",
             resolution: 'low_resolution',
-            accessToken: 'IGQVJXcU5zd2hyUGpiZAGhwXzVFRFZACRGphNmNDZAXBpVmUyYTRUWFlhc2JiMmNCRHJNbEJSb29HTUJNS1hlR1R4T1dIR29XZAmxmbjJiMklZAalc3TmFBMG41OHE1ME1EUzZA3dE5za2RHUHZAqZAmh5N1pzLQZDZD'
+            accessToken: 'IGQVJXcU5zd2hyUGpiZAGhwXzVFRFZACRGphNmNDZAXBpVmUyYTRUWFlhc2JiMmNCRHJNbEJSb29HTUJNS1hlR1R4T1dIR29XZAmxmbjJiMklZAalc3TmFBMG41OHE1ME1EUzZA3dE5za2RHUHZAqZAmh5N1pzLQZDZD',
+            template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /><span class="image-overlay"><i class="image-overlay-inside fas fa-link"></i></span></a>',
         });
         userFeed.run();
     </script>

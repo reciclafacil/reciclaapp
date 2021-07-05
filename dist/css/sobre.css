@@ -36,8 +36,55 @@
 }
 
 #instafeed-container a { 
+    position: relative;
     display: inline-block;
     width: 25%;
     padding: 0 10px;
     margin-bottom: 30px;
 }
+#instafeed-container a:hover .image-overlay {
+    opacity: .78;
+}
+#instafeed-container a:hover .image-overlay-inside {
+    animation: instafeed_icon .5s 1 cubic-bezier(.175,.885,.32,1.275);
+}
+#instafeed-container .image-overlay {
+    background: #fff;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: opacity .4s ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    overflow: hidden;
+}
+#instafeed-container .image-overlay-inside {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#instafeed-container .image-overlay-inside:before {
+    position: absolute;
+    border-radius: 50px;
+    background: var(--rc-green);
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -40px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+@keyframes instafeed_icon {
+    0%   { transform:rotate(-175deg) scale(0.2);  }
+    100% { transform:rotate(0deg) scale(1);   }
+  }

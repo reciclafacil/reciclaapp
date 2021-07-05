@@ -6,19 +6,20 @@ function enviarForm(url, body){
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-type', 'application/json');
     xhr.send(JSON.stringify(body));
-    xhr.onload = function(){
-        alert('Mensagem enviada com sucesso!');
+    xhr.onload = function() {
+        $('#formModal').modal('show');
+        $('#formulario').trigger("reset");
     }
 }
 
 function recebeConteudo(){
     event.preventDefault();
     let url = "https://api.staticforms.xyz/submit";
-    let nome = document.getElementById('nomeInput').value;
-    let email = document.getElementById('emailInput').value;
-    let telefone = document.getElementById('telInput').value;
-    let assunto = document.getElementById('assuntoInput').value;
-    let mensagem = document.getElementById('mensagemInput').value;
+    let nome = $('#nomeInput').val();
+    let email = $('#emailInput').val();
+    let telefone = $('#telInput').val();
+    let assunto = $('#assuntoInput').val();
+    let mensagem = $('#mensagemInput').val();
     body = {
         "accessKey" : chave,
         "$Nome" : nome,
@@ -29,17 +30,7 @@ function recebeConteudo(){
     }
     enviarForm(url, body);
 }
-document.getElementById('formulario').addEventListener('submit', recebeConteudo);
 
-// "Mascara" para telefone...
-function mascara_tel(event){
-    let tel = document.getElementById('telInput');
-    switch(tel.value.length){
-        case 1:
-            tel.value = "("+ tel.value;
-                break;
-        case 3:
-            tel.value += ")";
-            break;
-    }
-}
+$(function() {
+    $('#formulario').submit(recebeConteudo);
+});
